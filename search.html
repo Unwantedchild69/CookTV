@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Search Movies</title>
+    <link rel="stylesheet" href="search-style.css">
+  </head>
+  <body>
+    <header class="navbar">
+        <div class="logo">CookTV</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="movies.html">Movies</a>
+                </li>
+                <li>
+                    <a href="search.html">Search</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <h1>Movie Search</h1>
+      <form class="search-form" id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search movies..." />
+      </form>
+      <div id="searchResults"></div>
+    </div>
+
+    <script src="movie-data.js"></script>
+    <script src="movie-script.js"></script>
+  </body>
+</html>

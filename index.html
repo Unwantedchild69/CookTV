@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo">CookTV</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="movies.html">Movies</a>
+                    </li>
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         <div class="container">
+                <div class="bubbles">
+                        <span class="circle" style="--i:11"></span>
+                        <span class="circle" style="--i:12"></span>
+                        <span class="circle" style="--i:24"></span>
+                        <span class="circle" style="--i:10"></span>
+                        <span class="circle" style="--i:14"></span>
+                        <span class="circle" style="--i:23"></span>
+                        <span class="circle" style="--i:18"></span>
+                        <span class="circle" style="--i:16"></span>
+                        <span class="circle" style="--i:19"></span>
+                        <span class="circle" style="--i:20"></span>
+                        <span class="circle" style="--i:22"></span>
+                        <span class="circle" style="--i:25"></span>
+                        <span class="circle" style="--i:18"></span>
+                        <span class="circle" style="--i:21"></span>
+                        <span class="circle" style="--i:15"></span>
+                        <span class="circle" style="--i:13"></span>
+                        <span class="circle" style="--i:26"></span>
+                        <span class="circle" style="--i:17"></span>
+                        <span class="circle" style="--i:13"></span>
+                        <span class="circle" style="--i:28"></span>
+
+                </div>
+            </div>
+        <div class="banner">
+            <div class="slider" style="--quantity: 10">
+                <a href="movie.html?id=movie1" class="item" style="--position: 1"><img src="movie1.jpg" alt=""></a>
+                <a href="movie.html?id=movie2" class="item" style="--position: 2"><img src="movie2.jpg" alt=""></a>
+                <a href="movie.html?id=movie3" class="item" style="--position: 3"><img src="movie3.jpg" alt=""></a>
+                <a href="movie.html?id=movie4" class="item" style="--position: 4"><img src="movie4.jpg" alt=""></a>
+                <a href="movie.html?id=movie5" class="item" style="--position: 5"><img src="movie5.jpg" alt=""></a>
+                <a href="movie.html?id=movie6" class="item" style="--position: 6"><img src="movie6.jpg" alt=""></a>
+                <a href="movie.html?id=movie7" class="item" style="--position: 7"><img src="movie7.jpg" alt=""></a>
+                <a href="movie.html?id=movie8" class="item" style="--position: 8"><img src="movie8.jpg" alt=""></a>
+                <a href="movie.html?id=movie9" class="item" style="--position: 9"><img src="movie9.jpg" alt=""></a>
+                <a href="movie.html?id=movie10" class="item" style="--position: 10"><img src="movie10.jpg" alt=""></a>
+            </div>
+        </div>
+        
+        <script>
+            const links = document.querySelectorAll('.item');
+            links.forEach(link => {
+            link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = this.getAttribute('href');
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+            window.location.href = url;
+            }, 600);
+            });
+            });
+        </script>
+    </body>
+</html>

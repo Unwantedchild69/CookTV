@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lan="end">
+        <head>
+            <title>movies</title>
+            <link rel="stylesheet" href="moviesmenu-style.css">
+        </head>
+        <body>
+            <header class="navbar">
+                <div class="logo">CookTV</div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="search.html">Search</a></li>
+                    </ul>
+                </nav>
+            </header>
+             <div class="filter-bar">
+                <label for="genreFilter">Genre:</label>
+                <select id="genreFilter">
+                    <option value="">All genre</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Action">Action</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Science">Science</option>
+                    <option value="Docudrama">Docudrama</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+             </div>
+
+             <div class="hero-slider" id="heroSlider"></div>
+            <div class="hero-indicators" id="heroIndicators"></div>
+
+
+
+    <div class="movie-grid" id="movie-container"></div>
+            <script src="movie-data.js"></script>
+            <script src="movies-script.js"></script>
+        </body>
+    </html>
